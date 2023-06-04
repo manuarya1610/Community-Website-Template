@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- This is for GSAP -->
+
+    <script src="/ExternalJS/Gsap_3.4.2.js"></script>
+    <script src="/ExternalJS/Jquery_3.5.1.js"></script>
+
+    <!-- This is for the background lines -->
+
+    <link rel="stylesheet" href="/ExternalJS/motion_effect/sine.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Landing</title>
+  </head>
+  <body>
+    <div class="container_landing_page">
+      <div id="cursor">
+        <div class="cursor__inner"></div>
+      </div>
+
+      <nav class="navbar">
+        <h1>
+          <nav class="menu">
+            <a class="menu__item" href="index.html" cursor-class="overlay">
+              <div>
+                <span class="menu__item-text">M.S</span>
+              </div>
+            </a>
+          </nav>
+        </h1>
+        <ul>
+          <nav class="menu">
+            <a class="menu__item" href="profiles.html" cursor-class="overlay">
+              <div>
+                <span class="menu__item-text">Devs.</span>
+              </div>
+            </a>
+          </nav>
+        </ul>
+      </nav>
+      <div class="landing-inner">
+        <h1 class="first_line">Exploring</h1>
+        <div class="contains_together">
+          <h1 class="second_line">New Connections</h1>
+          <p class="landing_lead">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Create a developer
+            <br />
+            profile/portfolio, share posts and get <br />
+            &nbsp;&nbsp;&nbsp;&nbsp; help from other developers
+          </p>
+        </div>
+        <h1 class="third_line">among devs.</h1>
+      </div>
+      <div class="buttons">
+        <a href="register.html" class="btn" cursor-class="overlay">Sign Up</a>
+        <a href="login.html" class="btn" cursor-class="overlay">Login</a>
+      </div>
+
+      <div class="team-consist-small">
+        <div class="team-open" cursor-class="overlay">
+          <nav class="menu">
+            <div class="menu__item" cursor-class="overlay">
+              <div>
+                <span>Team</span>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="nav-container">
+          <canvas id="world"></canvas>
+
+          <div class="team-close">
+            <div class="menu__item" cursor-class="overlay">
+              <div>
+                <span>Back</span>
+              </div>
+            </div>
+          </div>
+
+          <nav class="team">
+            <div class="team-top">TEAM</div>
+            <h6 class="we_did" data-value="WE DID THIS!!">We did this</h6>
+            <!-- <h3 >Hover Above!!</h3> -->
+
+            <div class="team_about_container">
+              <div class="team_card">
+                <div class="content">
+                  <img class="team_img" src="/img/Arya.png" alt="" />
+                  <div>
+                    <p class="team_name">Manu Arya</p>
+                    <p class="team_lead">Designer & Developer</p>
+                  </div>
+                  <div class="team_btn btn">
+                    <a cursor-class="overlay" href="https://www.manuarya.tech"
+                      >Discover</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="team_card">
+                <div class="content">
+                  <img class="team_img" src="/img/Anant.png" alt="" />
+                  <div>
+                    <p class="team_name">Anant Singh</p>
+                    <p class="team_lead">F.T Developer</p>
+                  </div>
+                  <div class="team_btn btn">
+                    <a cursor-class="overlay" href="https://www.manuarya.tech"
+                      >Discover</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="landing-page-effect">
+      <svg
+        class="animated-lines"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 200 120"
+      ></svg>
+    </div>
+
+    <script src="/ExternalJS/motion_effect/sine.js"></script>
+
+    <!-- This is for the round red circle cursor effect -->
+
+    <script src="/ExternalJS/circle.js"></script>
+
+    <!-- This cursor effect ends here -->
+
+    <!-- This is for the circular nav bar effect -->
+
+    <script src="/ExternalJS/appStagger.js"></script>
+
+    <!-- This is the end for the circular effect -->
+
+    <!-- This is for the teams menu -->
+
+    <!-- This is for the teams background animation -->
+    <script src="/ExternalJS/city.js"></script>
+
+    <script src="/ExternalJS/basic_animation.js"></script>
+  </body>
+</html>

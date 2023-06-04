@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/ExternalJS/stylestagger.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hi There!</title>
+  </head>
+  <body>
+    <div id="cursor">
+      <div class="cursor__inner"></div>
+    </div>
+
+    <nav class="navbar">
+      <h1>
+        <nav class="menu">
+          <a class="menu__item" href="index.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">M.S</span>
+            </div>
+          </a>
+        </nav>
+      </h1>
+      <ul>
+        <nav class="menu">
+          <a class="menu__item" href="register.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">Register</span>
+            </div>
+          </a>
+        </nav>
+        <nav class="menu">
+          <a class="menu__item" href="login.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">Login</span>
+            </div>
+          </a>
+        </nav>
+      </ul>
+    </nav>
+    <section class="container">
+      <a href="profiles.html" cursor-class="overlay" class="btn back_btn"
+        >Back To Profiles</a
+      >
+
+      <div class="profile-grid my-1">
+        <!-- Top -->
+        <div class="profile-top">
+          <img
+            class="round-img"
+            src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+            alt=""
+          />
+          <h1 class="profile_name">John Doe</h1>
+          <p class="profile_lead">Developer at Microsoft</p>
+          <p class="profile_lead">Seattle, WA</p>
+          <div class="icons my-1">
+            <a
+              cursor-class="overlay"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-globe fa-2x"></i>
+            </a>
+            <a
+              cursor-class="overlay"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a
+              cursor-class="overlay"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a
+              cursor-class="overlay"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a
+              cursor-class="overlay"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a
+              cursor-class="overlay"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="profile-about">
+          <h2 class="profile_name">John's Bio</h2>
+          <p class="profile_lead">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+            doloremque nesciunt, repellendus nostrum deleniti recusandae nobis
+            neque modi perspiciatis similique?
+          </p>
+          <div class="line"></div>
+          <h2 class="profile_name">Skill Set</h2>
+          <div class="skills">
+            <div class="profile_lead p-1">HTML</div>
+            <div class="profile_lead p-1">CSS</div>
+            <div class="profile_lead p-1">JavaScript</div>
+            <div class="profile_lead p-1">Python</div>
+            <div class="profile_lead p-1">C#</div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="profile-exp">
+          <h2 class="profile_name">Experience</h2>
+          <div>
+            <h3 class="exp_lead">Microsoft</h3>
+            <p>Oct 2011 - Current</p>
+            <p><strong>Position: </strong>Senior Developer</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dignissimos placeat, dolorum ullam
+              ipsam, sapiente suscipit dicta eius velit amet aspernatur
+              asperiores modi quidem expedita fugit.
+            </p>
+          </div>
+
+          <div>
+            <h3>Sun Microsystems</h3>
+            <p>Nov 2004 - Nov 2011</p>
+            <p><strong>Position: </strong>Systems Admin</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dignissimos placeat, dolorum ullam
+              ipsam, sapiente suscipit dicta eius velit amet aspernatur
+              asperiores modi quidem expedita fugit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="profile-edu">
+          <h2 class="profile_name">Education</h2>
+          <div>
+            <h3>University Of Washington</h3>
+            <p>Sep 1993 - June 1999</p>
+            <p><strong>Degree: </strong>Masters</p>
+            <p><strong>Field Of Study: </strong>Computer Science</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dignissimos placeat, dolorum ullam
+              ipsam, sapiente suscipit dicta eius velit amet aspernatur
+              asperiores modi quidem expedita fugit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Github -->
+        <div class="profile-github">
+          <h2 class="profile_name my-1">
+            <i class="fab fa-github fa-2x"></i> Github Repos
+          </h2>
+          <div class="repo p-1 my-1">
+            <div>
+              <h4>
+                <a
+                  cursor-class="overlay"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repo One</a
+                >
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat, laborum!
+              </p>
+            </div>
+            <div>
+              <ul>
+                <li class="badge badge-primary">Stars: 44</li>
+                <li class="badge badge-dark">Watchers: 21</li>
+                <li class="badge badge-light">Forks: 25</li>
+              </ul>
+            </div>
+          </div>
+          <div class="repo p-1 my-1">
+            <div>
+              <h4>
+                <a
+                  cursor-class="overlay"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repo Two</a
+                >
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat, laborum!
+              </p>
+            </div>
+            <div>
+              <ul>
+                <li class="badge badge-primary">Stars: 44</li>
+                <li class="badge badge-dark">Watchers: 21</li>
+                <li class="badge badge-primary">Forks: 25</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- This is for the round red circle cursor effect -->
+
+    <script src="/ExternalJS/circle.js"></script>
+
+    <!-- This cursor effect ends here -->
+
+    <!-- This is for the circular nav bar effect -->
+
+    <script src="/ExternalJS/appStagger.js"></script>
+
+    <!-- This is the end for the circular effect -->
+  </body>
+</html>

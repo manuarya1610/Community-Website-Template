@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="/ExternalJS/stylestagger.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Devs.</title>
+  </head>
+  <body>
+    <div id="cursor">
+      <div class="cursor__inner"></div>
+    </div>
+    <nav class="navbar">
+      <h1>
+        <nav class="menu">
+          <a class="menu__item" href="index.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">M.S</span>
+            </div>
+          </a>
+        </nav>
+      </h1>
+      <ul>
+        <nav class="menu">
+          <a class="menu__item" href="register.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">Sign Up</span>
+            </div>
+          </a>
+        </nav>
+        <nav class="menu">
+          <a class="menu__item" href="login.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">Login</span>
+            </div>
+          </a>
+        </nav>
+      </ul>
+    </nav>
+    <section class="container">
+      <p class="large_head word fancy" id="channel-link">
+        Meet&nbsp;the&nbsp;Devs.
+      </p>
+      <p class="lead_head">Dare to hover above !</p>
+      <div class="profiles">
+        <div class="profile">
+          <img
+            class="round-img"
+            src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+            alt=""
+          />
+          <div>
+            <h2 class="profile_heading">John Doe</h2>
+            <p class="text-primary">Developer at Microsoft</p>
+            <p class="text-primary">Seattle, WA</p>
+            <a href="profile.html" class="btn view_btn" cursor-class="overlay"
+              >View Profile</a
+            >
+          </div>
+
+          <ul>
+            <li class="text-primary">HTML</li>
+            <li class="text-primary">CSS</li>
+            <li class="text-primary">JavaScript</li>
+            <li class="text-primary">Python</li>
+            <li class="text-primary">C#</li>
+          </ul>
+        </div>
+
+        <div class="profile">
+          <img
+            class="round-img"
+            src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+            alt=""
+          />
+          <div>
+            <!-- Extra classes added to the p tags i.e: text-primary -->
+
+            <h2 class="profile_heading">John Doe</h2>
+            <p class="text-primary">Developer at Microsoft</p>
+            <p class="text-primary">Seattle, WA</p>
+            <a href="profile.html" class="btn view_btn" cursor-class="overlay"
+              >View Profile</a
+            >
+          </div>
+
+          <ul>
+            <li class="text-primary">HTML</li>
+            <li class="text-primary">CSS</li>
+            <li class="text-primary">JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- This is for the round red circle cursor effect -->
+
+    <script src="/ExternalJS/circle.js"></script>
+
+    <script src="/ExternalJS/explosive.js"></script>
+
+    <!-- This cursor effect ends here -->
+
+    <!-- This is for the circular nav bar effect -->
+
+    <script src="/ExternalJS/appStagger.js"></script>
+
+    <!-- This is the end for the circular effect -->
+  </body>
+</html>

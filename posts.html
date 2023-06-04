@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/ExternalJS/stylestagger.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <div id="cursor">
+      <div class="cursor__inner"></div>
+    </div>
+    <nav class="navbar">
+      <h1>
+        <nav class="menu">
+          <a class="menu__item" href="index.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">M.S</span>
+            </div>
+          </a>
+        </nav>
+      </h1>
+      <ul>
+        <nav class="menu">
+          <a class="menu__item" href="profiles.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">Devs.</span>
+            </div>
+          </a>
+        </nav>
+
+        <nav class="menu">
+          <a class="menu__item" href="posts.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">Posts</span>
+            </div>
+          </a>
+        </nav>
+        <nav class="menu">
+          <a
+            class="menu__item"
+            title="Dashboard"
+            href="dashboard.html"
+            cursor-class="overlay"
+          >
+            <div>
+              <span class="menu__item-text hide-sm">Dashboard</span>
+            </div>
+          </a>
+        </nav>
+
+        <nav class="menu">
+          <a
+            class="menu__item"
+            href="login.html"
+            title="Logout"
+            cursor-class="overlay"
+          >
+            <div>
+              <span class="menu__item-text hide-sm">Logout</span>
+            </div>
+          </a>
+        </nav>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="large_head word fancy" id="channel-link">Posts</h1>
+      <p class="lead_head">Welcome to the community!</p>
+
+      <div class="post-form">
+        <div>
+          <h3 class="loading">Say Something</h3>
+        </div>
+        <form class="form my-1 message_box">
+          <textarea
+            class="message_area"
+            name="text"
+            cols="30"
+            rows="5"
+            placeholder="Create a post"
+            required
+          ></textarea>
+          <input
+            cursor-class="overlay"
+            type="submit"
+            class="login_button"
+            value="Submit"
+          />
+        </form>
+      </div>
+
+      <div class="posts">
+        <div class="post p-1 my-1">
+          <div>
+            <a href="profile.html">
+              <img
+                class="round-img"
+                src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                alt=""
+              />
+              <h4 cursor-class="overlay" class="post_user">John Doe</h4>
+            </a>
+          </div>
+          <div>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              possimus corporis sunt necessitatibus! Minus nesciunt soluta
+              suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+              dolor? Illo perferendis eveniet cum cupiditate aliquam?
+            </p>
+            <p class="post-date">Posted on 04/16/2019</p>
+            <button type="button" class="post_button">
+              <i class="fas fa-thumbs-up"></i>
+              <span>4</span>
+            </button>
+            <button type="button" class="post_button">
+              <i class="fas fa-thumbs-down"></i>
+            </button>
+            <a href="post.html" class="post_button">
+              Discussion <span class="comment-count">2</span>
+            </a>
+            <button
+              type="button"
+              cursor-class="overlay"
+              class="post_button btn-danger"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="post bg-white p-1 my-1">
+          <div>
+            <a href="profile.html">
+              <img
+                class="round-img"
+                src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                alt=""
+              />
+              <h4 class="post_user" cursor-class="overlay">John Doe</h4>
+            </a>
+          </div>
+          <div>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              possimus corporis sunt necessitatibus! Minus nesciunt soluta
+              suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+              dolor? Illo perferendis eveniet cum cupiditate aliquam?
+            </p>
+            <p class="post-date">Posted on 04/16/2019</p>
+            <button type="button" class="post_button">
+              <i class="fas fa-thumbs-up"></i>
+              <span>4</span>
+            </button>
+            <button type="button" class="post_button">
+              <i class="fas fa-thumbs-down"></i>
+            </button>
+            <a href="post.html" class="post_button">
+              Discussion <span class="comment-count">3</span>
+            </a>
+            <button
+              type="button"
+              cursor-class="overlay"
+              class="post_button btn-danger"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- This is for the round red circle cursor effect -->
+
+    <script src="/ExternalJS/circle.js"></script>
+
+    <!-- This cursor effect ends here -->
+
+    <!-- This is for the circular nav bar effect -->
+
+    <script src="/ExternalJS/appStagger.js"></script>
+
+    <!-- This is the end for the circular effect -->
+
+    <script src="/ExternalJS/explosive.js"></script>
+  </body>
+</html>

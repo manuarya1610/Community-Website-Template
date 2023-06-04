@@ -1,0 +1,1835 @@
+/* Global Styles */
+@font-face {
+  font-family: gallery;
+  src: url(/fonts/Gallery/GalleryModern.otf);
+}
+
+@font-face {
+  font-family: grand;
+  src: url(/fonts/Decay-White-Alt.otf);
+}
+@font-face {
+  font-family: grand_new;
+  src: url(/fonts/Carola.otf);
+}
+
+/* For setting placeholder color */
+::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: rgb(0, 0, 0);
+}
+
+::-ms-input-placeholder {
+  color: rgb(0, 0, 0);
+}
+
+/* Ends Placeholder styling */
+
+:root {
+  /* --primary-color: #17a2b8; */
+  /* --dark-color: #343a40; */
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a746cb;
+}
+
+* {
+  /* -webkit-font-smoothing: antialiased; */
+  font-family: "gallery", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-transform: uppercase;
+  background-color: rgb(240, 240, 240);
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+
+.login_contain {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/img/login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register_contain {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/img/reg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info_contain {
+  overflow: hidden;
+  height: fit-content;
+  width: 100vw;
+  background-image: url(/img/fabian-mardi-kVKz9qnJC-k-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.container_new_profiles {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10rem;
+}
+
+.container_new_profile {
+  width: 100vw;
+  height: fit-content;
+  margin-top: 4rem;
+}
+
+/* used for login and register pages */
+
+.container_in {
+  margin-top: 7.5vw;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+  padding: 0rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* used for login and register pages */
+
+.large_new_post {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 3.5rem;
+}
+
+.large_profile_new {
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* Text Styles*/
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+/* Padding */
+.p {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.py {
+  padding: 0.5rem 0;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* Margin */
+.m {
+  margin: 0.5rem;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.my {
+  margin: 0.5rem 0;
+}
+.my-1 {
+  font-family: grand;
+  text-transform: none;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-22 {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+
+.badge {
+  font-family: grand, Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-top-left-radius: 1.1rem;
+  border-bottom-left-radius: 1.1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  text-align: center;
+  background: var(--light-color);
+  color: rgb(255, 255, 255);
+}
+
+.alert {
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: fit-content;
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: var(--light-color);
+  color: #333;
+}
+
+.btn-primary,
+.bg-primary,
+.alert-primary {
+  color: rgb(0, 0, 0);
+}
+
+.badge-primary,
+.badge-light,
+.badge-dark {
+  background: rgb(218, 114, 2);
+}
+
+.btn-light,
+.bg-light,
+.alert-light {
+  color: rgb(0, 0, 0);
+}
+
+.btn-dark,
+.bg-dark,
+.alert-dark {
+  color: rgb(0, 0, 0);
+}
+
+.bg-danger,
+.badge-danger,
+.alert-danger {
+  background: rgba(150, 1, 1, 0.7);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  color: #fff;
+}
+
+.btn-success,
+.bg-success,
+.badge-success,
+.alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.btn-white,
+.bg-white,
+.badge-white,
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.bg-light,
+.badge-light {
+  border: #ccc solid 1px;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: rgb(218, 114, 2);
+  margin: 1.5rem 0;
+}
+
+/* Overlay */
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Forms */
+.form .form-group {
+  margin: 1.2rem 0;
+}
+
+select {
+  width: 25rem;
+}
+
+.form .form-text {
+  font-size: 1.5rem;
+  text-transform: none;
+  display: block;
+  margin-top: 0.3rem;
+  color: rgb(0, 0, 0);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
+.form select,
+.form h4,
+.form p {
+  font-family: grand;
+  text-align: center;
+  padding: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.form textarea {
+  font-family: grand;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.form .social-input {
+  display: flex;
+}
+
+.form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.form .social-input i.fa-twitter {
+  color: #000000;
+}
+.form .social-input i.fa-facebook {
+  color: #000000;
+}
+.form .social-input i.fa-instagram {
+  color: #000000;
+}
+.form .social-input i.fa-youtube {
+  color: #000000;
+}
+.form .social-input i.fa-linkedin {
+  color: #000000;
+}
+
+table {
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.table th {
+  background: rgba(218, 114, 2, 0.517);
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.2rem;
+  padding-top: 0.7rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+}
+
+/* Navbar CSS */
+
+.menu {
+  display: flex;
+  user-select: none;
+}
+
+.menu__item {
+  margin-right: 1.2rem;
+  text-transform: none;
+  position: relative;
+  cursor: none;
+}
+
+.menu__item-text {
+  position: relative;
+}
+
+.menu__item > div {
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.menu__item > div:nth-child(1) span {
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: calc(0.05s * var(--index));
+  transform-origin: bottom;
+  display: inline-block;
+}
+
+.menu__item > div:nth-child(2) span {
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: calc(0.05s * var(--index));
+  transform-origin: top;
+  display: inline-block;
+  transform: translate3d(0, 100%, 0) rotateX(90deg);
+}
+
+.menu__item:hover > div:nth-child(1) span {
+  transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.menu__item:hover > div:nth-child(2) span {
+  transform: translate3d(0, 0%, 0) rotateX(0deg);
+}
+
+.menu__item {
+  margin-top: 0.5rem;
+  font-size: 2.2rem;
+}
+
+/* End Navbar CSS */
+
+/* Landing Page */
+
+.landing-inner {
+  margin-top: 22vh;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-landing-text {
+  background: transparent;
+}
+
+.container_landing_page {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+}
+
+.contains_together {
+  text-align: center;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page-effect {
+  position: absolute;
+}
+
+.first_line {
+  text-align: center;
+  margin-bottom: 0rem;
+  font-size: 10vw;
+}
+
+.second_line {
+  margin-left: 12vw;
+  padding: 0;
+  font-size: 5.5vw;
+}
+
+.landing_lead {
+  text-align: justify;
+  /* text-justify: inter-word; */
+  margin-top: 0.7rem;
+  margin-left: 2rem;
+  line-height: 1.1rem;
+  width: fit-content;
+  font-size: 1vw;
+}
+
+.third_line {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 8vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.team {
+  right: 0;
+}
+
+.lead_new_post {
+  color: rgb(218, 114, 2);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.lead_profile_new {
+  color: black;
+}
+.lead_p_profile_new {
+  color: black;
+}
+
+/* Profiles Page */
+
+.profile {
+  text-transform: none;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem;
+  margin-left: -4rem;
+  border-radius: 2rem;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile:hover {
+  border: 0.7s ease;
+  border: 0.5px solid rgba(218, 114, 2, 0.708);
+}
+
+/* Profile Page */
+
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
+  grid-gap: 1rem;
+}
+
+.profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem;
+  padding: 5rem;
+}
+
+.profile-top:hover {
+  opacity: 0;
+  border: 1px solid rgb(218, 114, 2);
+  transition: 0.35s ease;
+  opacity: 1;
+}
+
+.profile-top img {
+  margin-bottom: 1.5rem;
+  width: 15rem;
+  height: auto;
+}
+
+.profile-top .icons a {
+  color: black;
+  margin: 0 0.3rem;
+}
+
+.profile-top .icons a:hover {
+  color: rgb(218, 114, 2);
+}
+
+.profile-about {
+  grid-area: about;
+  text-align: center;
+  text-transform: none;
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.45);
+  border: none;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem;
+  padding: 5rem;
+}
+
+.profile-about:hover {
+  opacity: 0;
+  border: 1px solid rgb(218, 114, 2);
+  transition: 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.profile-about .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-exp {
+  font-family: "grand", Arial;
+  text-transform: none;
+  grid-area: exp;
+  border: none;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem;
+  padding: 5rem;
+}
+
+.profile-exp:hover {
+  opacity: 0;
+  border: 1px solid rgb(218, 114, 2);
+  transition: 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.profile-edu {
+  text-transform: none;
+  border: none;
+  grid-area: edu;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem;
+  padding: 5rem;
+}
+
+.profile-edu:hover {
+  opacity: 0;
+  border: 1px solid rgb(218, 114, 2);
+  transition: 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.profile-exp h2,
+.profile-edu h2 {
+  font-family: grand;
+  margin-bottom: 1rem;
+}
+
+.profile-exp > div,
+.profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: rgb(218, 114, 2) 1px dotted;
+}
+
+.profile-exp > div:last-child,
+.profile-edu > div:last-child {
+  border: 0;
+}
+
+.profile-exp p,
+.profile-edu p {
+  font-family: "grand";
+  margin: 0.5rem 0;
+}
+
+.profile-github {
+  grid-area: github;
+}
+
+.repo {
+  font-family: "grand";
+  padding-right: 0;
+  border: none;
+}
+
+.repo:hover {
+  opacity: 0;
+  border: 1px solid rgb(218, 114, 2);
+  transition: 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.profile-github .repo {
+  text-transform: none;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem;
+  display: flex;
+}
+
+.profile-github a,
+.profile-github p {
+  font-family: "grand";
+}
+
+.profile-github a {
+  color: rgb(218, 114, 2);
+}
+
+.profile-github .repo > div:first-child {
+  flex: 7;
+  flex-basis: 70%;
+}
+
+.profile-github > div:last-child {
+  flex: 3;
+  flex-basis: 20%;
+}
+
+/* Posts Page */
+.post-form .post-form-header {
+  /* background: var(--primary-color); */
+  padding: 0.5rem;
+}
+
+.post-form h3 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+  border: none;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem;
+  padding: 2.5rem;
+}
+
+.post:hover {
+  opacity: 0;
+  border: 1px solid rgb(218, 114, 2);
+  transition: 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.post > div:first-child {
+  text-align: center;
+}
+
+.post .comment-count {
+  /* background: var(--light-color); */
+  /* color: var(--primary-color); */
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.post .post-date {
+  font-family: grand;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.post h4 {
+  font-size: 3rem;
+  color: rgb(218, 114, 2);
+}
+
+/* This is for the cursor red ball effect */
+
+#cursor {
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.cursor__inner {
+  background: rgb(218, 114, 2);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px rgba(255, 255, 255, 0);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hide .cursor__inner {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+#cursor.overlay {
+  size: 0.5rem;
+  z-index: 9999999;
+}
+
+.overlay .cursor__inner {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+}
+
+/* The cursor effect ends here */
+
+/* The loading dots animation starts here */
+
+.loading {
+  position: relative;
+  text-transform: none;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  color: black;
+}
+
+.loading:after {
+  content: " : ";
+  animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: rgb(0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 rgb(0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%,
+  100% {
+    text-shadow: 0.25em 0 0 rgb(0, 0, 0), 0.5em 0 0 rgb(0, 0, 0);
+  }
+}
+
+/* The loading dots animation ends here */
+
+.message_area {
+  text-align: start;
+  margin-top: 0;
+  height: fit-content;
+  width: 40rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem;
+}
+
+.message_box {
+  text-align: start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.post_user {
+  font-size: 3rem;
+  color: rgb(218, 114, 2);
+}
+
+.profile_headings {
+  margin-bottom: 1rem;
+}
+
+.profile_heading_under {
+  text-transform: none;
+}
+
+.details_button {
+  position: absolute;
+  bottom: 0;
+}
+
+.details {
+  width: 100vw;
+  height: fit-content;
+}
+
+/* Navbar CSS */
+
+.menu_new_profile {
+  margin-right: 2rem;
+}
+
+.menu {
+  display: flex;
+  user-select: none;
+}
+
+.menu__item {
+  text-transform: none;
+  position: relative;
+  cursor: none;
+}
+
+.menu__item-text {
+  position: relative;
+}
+
+.menu__item > div {
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.menu__item > div:nth-child(1) span {
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: calc(0.05s * var(--index));
+  transform-origin: bottom;
+  display: inline-block;
+}
+
+.menu__item > div:nth-child(2) span {
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: calc(0.05s * var(--index));
+  transform-origin: top;
+  display: inline-block;
+  transform: translate3d(0, 100%, 0) rotateX(90deg);
+}
+
+.menu__item:hover > div:nth-child(1) span {
+  transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.menu__item:hover > div:nth-child(2) span {
+  transform: translate3d(0, 0%, 0) rotateX(0deg);
+}
+
+.menu__item {
+  margin-top: 0.5rem;
+  font-family: "orelo_bold", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 2.2rem;
+}
+.menu__item_new {
+  margin-top: 0.5rem;
+  margin-left: -2rem;
+  font-family: "orelo_bold", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+
+/* End Navbar CSS */
+
+/* This is for the teams section */
+
+/* menu small */
+
+.team-consist-small {
+  overflow: scroll;
+  width: 100vw;
+  display: block;
+}
+
+.team-open {
+  color: rgb(0, 0, 0);
+}
+
+.team-open,
+.team-close {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 0.6rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.team-close {
+  color: white;
+}
+
+.nav-container {
+  z-index: 100;
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.927);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.team-top {
+  color: white;
+  font-size: 2rem;
+}
+
+.we_did {
+  margin-top: 5rem;
+  font-size: 7rem;
+  color: white;
+}
+
+.team__item {
+  position: relative;
+  padding: 0 6vw;
+}
+
+.team__item-link {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  transition: opacity 0.4s;
+}
+
+.team__item-link::before {
+  all: initial;
+  counter-increment: menu;
+  position: absolute;
+  bottom: 60%;
+  left: 0;
+  pointer-events: none;
+}
+
+.team__item-link:hover {
+  transition-duration: 0.1s;
+  opacity: 0;
+}
+
+.team__item-link:hover + .team__item-img {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.team {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+  padding-right: 3rem;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  font-size: 7vw;
+}
+
+.marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: rgb(214, 214, 214);
+  pointer-events: none;
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  opacity: 0;
+  transition: all 0.1s;
+  transform: translateX(60px);
+}
+
+.team__item-link:hover ~ .marquee .marquee__inner {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-duration: 0.4s;
+}
+
+.team__item-link,
+.marquee span {
+  white-space: nowrap;
+  font-size: 7vw;
+  padding: 0 1vw;
+  line-height: 1.15;
+}
+
+.marquee span {
+  font-style: italic;
+}
+
+/* This is for the teams section  ends*/
+
+/* This is for the about section */
+
+.team_about_container {
+  position: absolute;
+  /* display: block; */
+  bottom: 0;
+  margin-bottom: 5vh;
+  color: white;
+  display: flex;
+  padding-right: 20vw;
+}
+
+#world {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+#worldd {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.inner_content {
+  position: relative;
+}
+
+.team_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-bottom: 8rem;
+}
+
+.team_lead {
+  /* line-height: 1; */
+  font-size: 1.3vw;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.about_button {
+  right: 0;
+}
+
+/* card */
+
+.team_card {
+  /* position: absolute; */
+  margin-right: 7rem;
+  width: 25rem;
+  height: 33rem;
+  background-color: rgb(30, 30, 30);
+  border-radius: 0.9rem;
+  position: relative;
+}
+
+.content {
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: black;
+  inset: 1px;
+  position: absolute;
+  border-radius: inherit;
+}
+
+.team_name {
+  /* line-height: 0; */
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+}
+
+.team_card:before {
+  background: linear-gradient(
+    45deg,
+    transparent 9%,
+    #ff791a 50%,
+    transparent 99%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 0px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+
+.team_card:hover:before {
+  opacity: 1;
+  transition: 0.7s ease;
+}
+
+/* h6 {
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+} */
+
+.team_btn {
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+/* This is for the about section end */
+
+/* This is for the buttons */
+
+/* buttons */
+
+.buttons {
+  margin-bottom: 1rem;
+  margin-left: 1.2vw;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+.login_button {
+  background: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
+  margin-top: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 2.2em;
+  color: rgb(0, 0, 0);
+}
+
+.login_button:hover {
+  opacity: 0;
+  background-color: rgb(218, 114, 2);
+  color: white;
+  border: 1px solid transparent;
+  transform: 0.75s ease;
+  opacity: 1;
+}
+
+.back_button {
+  font-size: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid currentColor;
+  border-radius: 2.2em;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+}
+
+.register_button {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid currentColor;
+  border-radius: 2.2em;
+  color: rgb(0, 0, 0);
+  background: transparent;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+}
+
+.register_button:hover {
+  opacity: 0;
+  background: rgba(218, 114, 2, 0.641);
+  transition: 0.7s ease;
+  opacity: 1;
+}
+
+/* for login buttons on the landing page */
+
+.btn {
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: fit-content;
+  height: fit-content;
+  font-family: "gallery", Arial, Helvetica, sans-serif;
+  display: flex;
+  border: 1px solid rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(0, 0, 0);
+
+  background-color: transparent;
+
+  margin-right: 1.5rem;
+  border-radius: 3rem;
+  font-size: 2.3rem;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 1s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.btn::after {
+  border: none;
+  background-color: rgb(218, 114, 2);
+
+  color: rgb(255, 255, 255);
+
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  transform: translate(0, 0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.861);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    border-color: transparent;
+
+    color: rgb(255, 255, 255);
+  }
+
+  .btn:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* sign up form */
+
+/* dashboard */
+
+.container .btn {
+  margin-bottom: 1.5rem;
+}
+/* dashboard */
+
+/* Posts */
+
+.post_button {
+  background: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 2.2em;
+  color: black;
+}
+
+.post_button:hover {
+  opacity: 0;
+  background-color: rgb(218, 114, 2);
+  color: white;
+  border: 1px solid transparent;
+  transform: 0.75s ease;
+  opacity: 1;
+}
+
+.btn-danger {
+  background: rgba(167, 0, 0, 0.929);
+}
+
+/* Posts */
+
+.large_in {
+  font-size: 10rem;
+}
+
+.fillout {
+  text-align: left;
+  outline: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  /* backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1.1rem; */
+  width: 45vw;
+  height: 6vh;
+}
+
+.btn_in {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* sign up form ends*/
+
+/* profile */
+
+.large_head {
+  font-size: 5.3rem;
+  text-align: center;
+}
+
+.lead_head {
+  text-transform: none;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.profile_heading {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* profile ends */
+
+/* This button is for back to profiles */
+
+.back_btn {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+/* This button is for back to profiles */
+
+/* This is for the view profile button */
+
+.view_btn {
+  font-size: 2rem;
+}
+
+/* This is for the view profile button */
+
+/* This is for the profile name */
+
+.profile_name {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.profile_lead {
+  font-family: grand, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.1rem;
+}
+
+/* This is for the profile name */
+
+/* This is for the create profile buttons */
+
+.create_buttons {
+  display: flex;
+}
+
+.cr_button {
+  text-transform: none;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 2.5rem;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid currentColor;
+  border-radius: 2.2em;
+  color: rgb(0, 0, 0);
+  background: transparent;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+}
+
+.cr_button:hover {
+  opacity: 0;
+  background: rgba(218, 114, 2, 0.641);
+  transition: 0.7s ease;
+  opacity: 1;
+}
+
+/* This is for the create profile buttons */
+
+.form-group p {
+  text-align: start;
+}
+
+/* This is for the explosive effect when hovering over the text */
+
+.word {
+  transition: opacity 250ms ease;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
+
+.fancy span {
+  display: inline-block;
+}
+
+.fancy > .outer {
+  transition: transform 350ms ease;
+}
+
+.fancy:hover > .outer {
+  transition-duration: 800ms;
+}
+
+.fancy:hover > .outer > .inner {
+  animation: float 5s ease infinite;
+}
+
+.fancy:hover > .outer > .inner > .letter {
+  background: rgb(218, 114, 2);
+  background-size: 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 150s linear infinite;
+}
+
+.fancy:hover > .outer:nth-child(1) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(2) {
+  transform: translate(-40%, 20%) rotate(4deg);
+}
+
+.fancy:hover > .outer:nth-child(3) {
+  transform: translate(-10%, 60%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(4) {
+  transform: translate(0%, 8%) rotate(-8deg);
+}
+
+.fancy:hover > .outer:nth-child(5) {
+  transform: translate(0%, -20%) rotate(5deg);
+}
+
+.fancy:hover > .outer:nth-child(6) {
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(7) {
+  transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.fancy:hover > .outer:nth-child(8) {
+  transform: translate(0%, 15%) rotate(10deg);
+}
+
+.fancy:hover > .outer:nth-child(9) {
+  transform: translate(0%, -50%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(10) {
+  transform: translate(0%, 15%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(11) {
+  transform: translate(50%, -10%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(12) {
+  transform: translate(120%, -30%) rotate(-17deg);
+}
+.fancy:hover > .outer:nth-child(13) {
+  transform: translate(120%, 30%) rotate(-12deg);
+}
+.fancy:hover > .outer:nth-child(14) {
+  transform: translate(-250%, -10%) rotate(15deg);
+}
+
+.fancy:hover > .outer:nth-child(15) {
+  transform: translate(50%, -10%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(16) {
+  transform: translate(0%, 15%) rotate(10deg);
+}
+
+.fancy:hover > .outer:nth-child(17) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(18) {
+  transform: translate(-40%, 20%) rotate(4deg);
+}
+
+.fancy:hover > .outer:nth-child(19) {
+  transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.fancy:hover > .outer:nth-child(20) {
+  transform: translate(0%, 15%) rotate(10deg);
+}
+
+.fancy:hover > .outer:nth-child(21) {
+  transform: translate(0%, -50%) rotate(8deg);
+}
+
+/* ends This is for the explosive effect when hovering over the text ends*/
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  html {
+    font-size: 0.5em;
+  }
+
+  .landing_lead {
+    display: none;
+  }
+
+  .container {
+    margin-top: 8rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  /* Text Styles */
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 70rem;
+    color: black;
+  }
+
+  .lead {
+    font-size: 10rem;
+    color: black;
+  }
+
+  /* Navbar */
+  .navbar {
+    /* display: block; */
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+  .navbar .welcome {
+    display: none;
+  }
+
+  /* Profiles Page */
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile ul {
+    display: none;
+  }
+
+  /* Profile Page */
+
+  .profile-top img,
+  .profile img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .profile-grid {
+    grid-template-areas:
+      "top"
+      "about"
+      "exp"
+      "edu"
+      "github";
+    margin-top: 0;
+  }
+
+  .profile-about .skills {
+    flex-direction: column;
+  }
+
+  .dash-buttons {
+    display: block;
+    /* width: 100%; */
+    margin-bottom: 5rem;
+  }
+
+  .post {
+    grid-template-columns: 1fr;
+  }
+  .post a,
+  .post button {
+    padding: 0.3rem 0.4rem;
+  }
+
+  .large_in {
+    margin-top: 8rem;
+  }
+
+  .fillout {
+    width: 70vw;
+  }
+
+  .message_area {
+    margin-top: 2rem;
+    width: 85vw;
+  }
+
+  .team_about_container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+  }
+
+  .team_card {
+    width: 85vw;
+    height: 15rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team_lead {
+    font-size: 1.5rem;
+  }
+
+  .team_img {
+    width: 30%;
+    height: 60%;
+    padding-right: 2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+}

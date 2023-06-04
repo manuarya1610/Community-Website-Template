@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="/ExternalJS/stylestagger.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <div class="register_contain">
+      <div id="cursor">
+        <div class="cursor__inner"></div>
+      </div>
+
+      <nav class="navbar">
+        <h1>
+          <nav class="menu">
+            <a class="menu__item" href="index.html" cursor-class="overlay">
+              <div>
+                <span class="menu__item-text">M.S</span>
+              </div>
+            </a>
+          </nav>
+        </h1>
+      </nav>
+      <section class="container_in">
+        <h1 class="large_in">Sign Up</h1>
+        <form class="form" action="create-profile.html">
+          <div class="form-group">
+            <input
+              cursor-class="overlay"
+              class="fillout"
+              type="text"
+              placeholder="Name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              cursor-class="overlay"
+              class="fillout"
+              type="email"
+              placeholder="Email Address"
+              name="email"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="fillout"
+              cursor-class="overlay"
+              type="password"
+              placeholder="Password"
+              name="password"
+              minlength="6"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="fillout"
+              cursor-class="overlay"
+              type="password"
+              placeholder="Confirm Password"
+              name="password2"
+              minlength="6"
+            />
+          </div>
+          <input
+            cursor-class="overlay"
+            type="submit"
+            class="login_button"
+            value="Register"
+          />
+        </form>
+        <p class="my-1">
+          Already have an account?&nbsp;
+          <a class="register_button" cursor-class="overlay" href="login.html"
+            >Sign In</a
+          >
+        </p>
+      </section>
+    </div>
+
+    <!-- This is for the round red circle cursor effect -->
+
+    <script src="/ExternalJS/circle.js"></script>
+
+    <!-- This cursor effect ends here -->
+
+    <!-- This is for the circular nav bar effect -->
+
+    <script src="/ExternalJS/appStagger.js"></script>
+
+    <!-- This is the end for the circular effect -->
+  </body>
+</html>

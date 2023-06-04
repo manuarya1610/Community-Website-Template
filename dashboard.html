@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/ExternalJS/stylestagger.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome To The Developer Connector</title>
+  </head>
+  <body>
+    <div id="cursor">
+      <div class="cursor__inner"></div>
+    </div>
+    <nav class="navbar bg-dark">
+      <h1>
+        <nav class="menu">
+          <a class="menu__item" href="index.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">M.S</span>
+            </div>
+          </a>
+        </nav>
+      </h1>
+      <ul>
+        <nav class="menu">
+          <a class="menu__item" href="profiles.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">Devs.</span>
+            </div>
+          </a>
+        </nav>
+        <nav class="menu">
+          <a class="menu__item" href="posts.html" cursor-class="overlay">
+            <div>
+              <span class="menu__item-text">Posts</span>
+            </div>
+          </a>
+        </nav>
+        <nav class="menu">
+          <a
+            class="menu__item"
+            title="Dashboard"
+            href="dashboard.html"
+            cursor-class="overlay"
+          >
+            <div>
+              <span class="menu__item-text hide-sm">Dashboard</span>
+            </div>
+          </a>
+        </nav>
+        <nav class="menu">
+          <a
+            class="menu__item"
+            href="login.html"
+            title="Logout"
+            cursor-class="overlay"
+          >
+            <div>
+              <span class="menu__item-text hide-sm">Logout</span>
+            </div>
+          </a>
+        </nav>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="large_head word fancy" id="channel-link">Dashboard</h1>
+      <p class="lead_head">Welcome John Doe</p>
+      <div class="create_buttons">
+        <a href="edit-profile.html" cursor-class="overlay" class="cr_button">
+          Edit Profile</a
+        >
+        <a href="add-experience.html" cursor-class="overlay" class="cr_button">
+          Add Experience</a
+        >
+        <a href="add-education.html" cursor-class="overlay" class="cr_button">
+          Add Education</a
+        >
+      </div>
+
+      <h2 class="my-22">Experience Credentials</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th class="hide-sm">Title</th>
+            <th class="hide-sm">Years</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tech Guy Web Solutions</td>
+            <td class="hide-sm">Senior Developer</td>
+            <td class="hide-sm">02-03-2009 - 01-02-2014</td>
+            <td>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Traversy Media</td>
+            <td class="hide-sm">Instructor & Developer</td>
+            <td class="hide-sm">02-03-2015 - Now</td>
+            <td>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="my-22">Education Credentials</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>School</th>
+            <th class="hide-sm">Degree</th>
+            <th class="hide-sm">Years</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Northern Essex</td>
+            <td class="hide-sm">Associates</td>
+            <td class="hide-sm">02-03-2007 - 01-02-2009</td>
+            <td>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="my-2">
+        <button class="btn btn-danger">
+          <i class="fas fa-user"></i>
+          &nbsp; Delete My Account
+        </button>
+      </div>
+    </section>
+    <!-- This is for the round red circle cursor effect -->
+
+    <script src="/ExternalJS/circle.js"></script>
+
+    <!-- This cursor effect ends here -->
+
+    <!-- This is for the circular nav bar effect -->
+
+    <script src="/ExternalJS/appStagger.js"></script>
+
+    <!-- This is the end for the circular effect -->
+
+    <script src="/ExternalJS/explosive.js"></script>
+  </body>
+</html>

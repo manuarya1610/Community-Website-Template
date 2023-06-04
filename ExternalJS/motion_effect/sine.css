@@ -1,0 +1,17 @@
+body {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+svg {
+  height: 100vh;
+  width: 100vw;
+
+}
+
+path {
+  fill: none;
+  stroke: rgb(218, 114, 2);
+  stroke-width: 0.7px;
+  vector-effect: non-scaling-stroke;
+}
